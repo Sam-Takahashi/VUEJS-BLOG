@@ -1,0 +1,25 @@
+<template>
+
+</template>
+
+<script>
+
+export default {
+  data () {
+    return {
+       
+    }
+  }
+}
+</script>
+
+<style scoped>
+
+</style>
+
+
+v-bind  :
+v-for  :cycle through data (array)
+*when using v-for i need to bind the key
+ <li  v-for="category in blog.categories" v-bind:key="category">{{ category }}</li>
+
