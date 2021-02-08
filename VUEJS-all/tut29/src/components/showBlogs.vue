@@ -8,7 +8,8 @@
 
         <input type="text" v-model="search" placeholder="search blogs">
 
-      <div v-for="blog in filteredBlogz" class="single-blog" v-bind:key="blog">
+<!-- blog in blogs is cycling through blogz array referenced in the "blog"variable -->
+      <div v-for="(blog, blog1) in filteredBlogz" class="single-blog" v-bind:key="blog1">
 
           <!-- pipe | symbolizes FILTER? -->
        <router-link v-bind:to="'/blog/'+ blog.id"><h2>{{ blog.title | to-uppercase }}</h2></router-link>
